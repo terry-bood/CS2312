@@ -1,0 +1,54 @@
+Input the output mode: 
+(Press 1 for console, 2 for output.txt, 3 for dual mode)
+1
+> register 001 sam senior
+Member created!
+> searchMember
+ID      Name    Outstanding Fine 
+001     sam     0.0
+
+> arrive B1 Book1 Author1
+Book arrived!
+> searchBook
+CallNo  Title   Authors 
+B1      Book1   Author1
+
+> checkout 001 B1 15/02/2009
+Book checked out!
+ID      Book    Due date 
+001     B1      15/02/2009
+
+> checkin B1 18/02/2009
+Book returned!
+Before book returned: 
+ID      Name    Outstanding Fine 
+001     sam     0.0
+
+After book returned: 
+ID      Name    Outstanding Fine 
+001     sam     15.0
+
+> pay 001 10
+Before payment:
+
+ID      Name    Outstanding Fine 
+001     sam     15.0
+
+After payment 
+
+Recharge: 0.0
+ID      Name    Outstanding Fine 
+001     sam     5.0
+
+> undo
+Before undo payment 
+
+ID      Name    Outstanding Fine 
+001     sam     5.0
+
+After undo payment:
+
+ID      Name    Outstanding Fine 
+001     sam     15.0
+
+> exit
